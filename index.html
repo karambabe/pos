@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.box {
+			position: absolute;
+			height: 500px;
+			width: 500px;
+			background-image: url(9.png);
+			background-size: 100% 100%;
+		}
+		.box2 {
+			position: absolute;
+			height: 500px;
+			width: 500px;
+			background-image: url(4.png);
+			background-size: 100% 100%;
+			margin-left: 400px;
+		}
+		.box3 {
+			position: absolute;
+			height: 500px;
+			width: 500px;
+			background-image: url(5.png);
+			background-size: 100% 100%;
+			margin-left: 800px;
+		}
+		.box4 {
+			position: absolute;
+			height: 500px;
+			width: 500px;
+			background-image: url(6.png);
+			background-size: 100% 100%;
+			margin-top: 500px
+		}
+		.box5 {
+			position: absolute;
+			height: 500px;
+			width: 500px;
+			background-image: url(7.png);
+			background-size: 100% 100%;
+			margin-left: 400px;
+			margin-top: 500px;
+		}
+		.box6 {
+			position: absolute;
+			height: 500px;
+			width: 500px;
+			background-image: url(8.png);
+			background-size: 100% 100%;
+			margin-left: 800px;
+			margin-top: 500px
+		}
+		.img {
+			position: absolute;
+			height: 950px;
+			width: 2000px;
+			background-image: url(1.jpg);
+			background-size: 100% 100%;
+			display: none;
+		}
+		.img2 {
+			position: absolute;
+			height: 950px;
+			width: 2000px;
+			background-image: url(2.jpg);
+			background-size: 100% 100%;
+			display: none;
+		}
+		.da {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<button class="btn">перемещать</button>
+
+
+<div class="box"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+<div class="box5"></div>
+<div class="box6"></div>
+<div class="img"></div>
+<div class="img2"></div>
+<h1 class="da">кто их них пудж?</h1>
+
+<script type="text/javascript">
+	let attemps = 3;
+	document.querySelector('.btn').onclick = function() {
+		document.querySelector('.btn').style.display = "none"
+		document.querySelector('.box').style.marginLeft = "800px"
+		document.querySelector('.box2').style.marginLeft = "400px"
+		document.querySelector('.box3').style.marginLeft = "350px"
+		document.querySelector('.box3').style.marginTop = "500px"
+		document.querySelector('.box4').style.marginLeft = "850px"
+		document.querySelector('.box4').style.marginTop = "500px"
+		document.querySelector('.box5').style.marginLeft = "0px"
+		document.querySelector('.box5').style.marginTop = "500px"
+		document.querySelector('.box6').style.marginLeft = "0px"
+		document.querySelector('.box6').style.marginTop = "0px"
+		document.querySelector('.da').style.display = "block"
+	}
+
+	document.querySelector('.box').onclick = function () {
+		attemps = attemps - 1;
+		console.log(attemps);
+		if(attemps==0) {
+			document.querySelector('.box').style.display = "none"
+			document.querySelector('.box2').style.display = "none"
+			document.querySelector('.box3').style.display = "none"
+			document.querySelector('.box4').style.display = "none"
+			document.querySelector('.box5').style.display = "none"
+			document.querySelector('.box6').style.display = "none"
+			document.querySelector('.btn').style.display = "none"
+			document.querySelector('.img').style.display = "block"
+			document.querySelector('.text').style.display = "none"
+		}
+	}
+	document.querySelector('.box2').onclick = function () {
+		attemps = attemps - 1;
+		console.log(attemps);
+		if(attemps==0) {
+			document.querySelector('.box').style.display = "none"
+			document.querySelector('.box2').style.display = "none"
+			document.querySelector('.box3').style.display = "none"
+			document.querySelector('.box4').style.display = "none"
+			document.querySelector('.box5').style.display = "none"
+			document.querySelector('.box6').style.display = "none"
+			document.querySelector('.btn').style.display = "none"
+			document.querySelector('.img').style.display = "block"
+			document.querySelector('.text').style.display = "none"
+		}
+	}
+	document.querySelector('.box3').onclick = function () {
+		attemps = attemps - 1;
+		console.log(attemps);
+		if(attemps==0) {
+			document.querySelector('.box').style.display = "none"
+			document.querySelector('.box2').style.display = "none"
+			document.querySelector('.box3').style.display = "none"
+			document.querySelector('.box4').style.display = "none"
+			document.querySelector('.box5').style.display = "none"
+			document.querySelector('.box6').style.display = "none"
+			document.querySelector('.btn').style.display = "none"
+			document.querySelector('.img').style.display = "block"
+			document.querySelector('.text').style.display = "none"
+		}
+	}
+	document.querySelector('.box4').onclick = function () {
+		attemps = attemps - 1;
+		console.log(attemps);
+		if(attemps==0) {
+			document.querySelector('.box').style.display = "none"
+			document.querySelector('.box2').style.display = "none"
+			document.querySelector('.box3').style.display = "none"
+			document.querySelector('.box4').style.display = "none"
+			document.querySelector('.box5').style.display = "none"
+			document.querySelector('.box6').style.display = "none"
+			document.querySelector('.btn').style.display = "none"
+			document.querySelector('.img').style.display = "block"
+			document.querySelector('.text').style.display = "none"
+		}
+	}
+	document.querySelector('.box5').onclick = function () {
+		attemps = attemps - 1;
+		console.log(attemps);
+		if(attemps==0) {
+			document.querySelector('.box').style.display = "none"
+			document.querySelector('.box2').style.display = "none"
+			document.querySelector('.box3').style.display = "none"
+			document.querySelector('.box4').style.display = "none"
+			document.querySelector('.box5').style.display = "none"
+			document.querySelector('.box6').style.display = "none"
+			document.querySelector('.btn').style.display = "none"
+			document.querySelector('.img').style.display = "block"
+			document.querySelector('.text').style.display = "none"
+		}
+	}
+	document.querySelector('.box6').onclick = function () {
+		attemps = attemps - 1;
+		console.log(attemps);
+		if(attemps==0) {
+			document.querySelector('.box').style.display = "none"
+			document.querySelector('.box2').style.display = "none"
+			document.querySelector('.box3').style.display = "none"
+			document.querySelector('.box4').style.display = "none"
+			document.querySelector('.box5').style.display = "none"
+			document.querySelector('.box6').style.display = "none"
+			document.querySelector('.btn').style.display = "none"
+			document.querySelector('.img2').style.display = "block"
+			document.querySelector('.text').style.display = "none"
+		}
+	}
+</script>
+</body>
+</html>
